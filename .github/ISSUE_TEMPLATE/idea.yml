@@ -1,0 +1,16 @@
+name: Suggest an improvement
+description: Share something that would make Downshift more useful.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like to do?
+      description: Describe the task and what gets in your way today. This report is public.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What might help?
+      description: A suggestion, example, or screenshot with private information removed.

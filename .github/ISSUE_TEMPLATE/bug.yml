@@ -1,0 +1,33 @@
+name: Bug report
+description: Something broke or behaved unexpectedly.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "This report is public. Remove private text, paths, and screenshots before posting. For private feedback, use https://feedback.gorewood.media/downshift."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: What were you trying to do, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: Steps or a small non-private example, if you have one. You can attach screenshots here.
+  - type: input
+    id: version
+    attributes:
+      label: Downshift version
+      placeholder: e.g. 0.4.41
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - Other
